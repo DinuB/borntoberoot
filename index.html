@@ -12,7 +12,7 @@
         outline: 0;
     }
 
-    body{
+    body, #body{
         background: #0e0e0e;
         display: flex;
         align-items: center;
@@ -22,11 +22,13 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
         text-align: center;
-        min-height: 100vh;
+        padding: 0;
+        margin: 0;
     }
 
-    #header{
-        /* margin-bottom: 50px; */
+    #body{
+        width: 100%;
+        height: 100vh;
     }
 
     #fiap{
@@ -75,33 +77,35 @@
 </style>
 
 <body>
-    <div id="header">
-        <a href="https://www.fiap.com.br/" target="_blank">
-            <span id="fiap">
-                FIAP 
+    <div id="body">
+        <div id="header">
+            <a href="https://www.fiap.com.br/" target="_blank">
+                <span id="fiap">
+                    FIAP 
+                </span>
+            </a>
+            <br><br>
+            <span id="curso">
+                DEFESA CIBERNÉTICA
             </span>
-        </a>
-        <br><br>
-        <span id="curso">
-            DEFESA CIBERNÉTICA
-        </span>
-        <br><br>
-        <span id="titulo">
-            CAP 5 - ARDUINO, O PEQUENO NOTÁVEL - POC NO TINKERCAD
-        </span>
-        <br><br><br>
-        <span id="grupo">
-            BORN TO BE ROOT
-        </span>
-        <br><br><br>
-    </div>
-
-    <div id="link">
-        <a href="https://www.tinkercad.com/things/hKmy05MC2yp-trabalho/editel?sharecode=wM_2uxnd9CUJm0hEiQ34cQ90v1Tw8PUcgg37GaLdyoY" target="_blank">
-            <button>
-                PROJETO TINKERCAD
-            </button>
-        </a>
+            <br><br>
+            <span id="titulo">
+                CAP 5 - ARDUINO, O PEQUENO NOTÁVEL - POC NO TINKERCAD
+            </span>
+            <br><br><br>
+            <span id="grupo">
+                BORN TO BE ROOT
+            </span>
+            <br><br><br>
+        </div>
+    
+        <div id="link">
+            <a href="https://www.tinkercad.com/things/hKmy05MC2yp-trabalho/editel?sharecode=wM_2uxnd9CUJm0hEiQ34cQ90v1Tw8PUcgg37GaLdyoY" target="_blank">
+                <button>
+                    PROJETO TINKERCAD
+                </button>
+            </a>
+        </div>
     </div>
 
     <script>
